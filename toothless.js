@@ -45,4 +45,6 @@ document.getElementById("form-login").onsubmit = (e) => {
 
      document.getElementById("form-cadastre-se").reset();
      window.location.href = "index.html";
+
+     
 }
