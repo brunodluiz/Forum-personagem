@@ -5,7 +5,13 @@
   background-repeat: no-repeat;
 }
 
+.banguela{
 
+  width: 500px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 
 
 
