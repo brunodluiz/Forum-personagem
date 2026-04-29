@@ -1,4 +1,4 @@
-body {
+#corpo {
   background-image: url('assets/2.gif');
   background-size: cover;
   background-position: center;
@@ -10,5 +10,16 @@ width: 100px;
 
 }
 
+#fundosite{
+background-color: black;
+color: azure;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+width: 800px;
+height: 1000px;
+text-align: ;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
 
