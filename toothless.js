@@ -45,4 +45,42 @@ document.getElementById("form-login").onsubmit = (e) => {
 
      document.getElementById("form-cadastre-se").reset();
      window.location.href = "index.html";
+
+    function login() {
+  const email = document.getElementById('email').value;
+  const senha = document.getElementById('senha').value;
+  const confirmarSenha = document.getElementById('confirmarSenha').value;
+
+  if (email === '' || senha === '' || confirmarSenha === '') {
+    alert('Preencha todos os campos!');
+  } else if (senha !== confirmarSenha) {
+    alert('As senhas não coincidem!');
+  } else {
+    window.location.href = 'home.html';
+  }
+}
+
+function login() {
+  const email = document.getElementById('email').value;
+  const senha = document.getElementById('senha').value;
+
+
+  const emailSalvo = localStorage.getItem('email');
+  const senhaSalva = localStorage.getItem('senha');
+
+  if (email === '' || senha === '') {
+    alert('Preencha todos os campos!');
+  } else if (email !== emailSalvo || senha !== senhaSalva) {
+    alert('Email ou senha incorretos!');
+  } else {
+    alert('Login realizado com sucesso!');
+    window.location.href = 'index.html';
+  }
+}
+
+
+
+
+
+
 }
