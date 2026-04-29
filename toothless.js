@@ -78,7 +78,30 @@ function login() {
   }
 }
 
+function mostrarMensagem(texto, tipo) {
+  const msg = document.getElementById('mensagem');
+  msg.className = `alert alert-${tipo}`;
+  msg.textContent = texto;
+}
 
+function cadastrar() {
+  const email = document.getElementById('email').value;
+  const senha = document.getElementById('senha').value;
+  const confirmarSenha = document.getElementById('confirmarSenha').value;
+
+  if (email === '' || senha === '' || confirmarSenha === '') {
+    mostrarMensagem('Preencha todos os campos!', 'danger');
+  } else if (senha !== confirmarSenha) {
+    mostrarMensagem('As senhas não coincidem!', 'danger');
+  } else {
+    localStorage.setItem('email', email);
+    localStorage.setItem('senha', senha);
+    mostrarMensagem('Cadastro realizado com sucesso!', 'success');
+    setTimeout(() => {
+      window.location.href = 'login.html';
+    }, 1500);
+  }
+}
 
 
 
