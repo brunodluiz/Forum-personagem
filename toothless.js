@@ -41,7 +41,8 @@ document.getElementById("form-login").onsubmit = (e) => {
         }
     }
     document.getElementById("form-login").reset();
-    window.location.href = "home.html";
     window.location.href = "pagina.html";
 
+     document.getElementById("form-cadastre-se").reset();
+     window.location.href = "index.html";
 }
